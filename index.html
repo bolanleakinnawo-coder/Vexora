@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vexora — Trade with clarity</title>
+<meta name="description" content="Vexora is a fictional forex trading platform concept.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="hd">
+  <div class="wrap nav">
+    <a href="#top" class="logo" aria-label="Vexora home"><b></b>Vexora</a>
+    <nav class="links" id="links" aria-label="Primary">
+      <a href="#platform">Platform</a><a href="#markets">Markets</a><a href="#features">Features</a><a href="#learn">Learn</a><a href="#security">About</a>
+    </nav>
+    <div class="actions">
+      <a href="#" class="login">Log in</a>
+      <a href="#cta" class="btn btn-p">Create account</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><i data-lucide="menu"></i></button>
+    </div>
+  </div>
+</header>
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="rv">
+      <p class="eyebrow">The modern way to trade forex</p>
+      <h1>Trade with clarity.<br><span class="grad">Move with confidence.</span></h1>
+      <p class="sub">Everything you need to explore the forex market, from your first trade to your next strategy.</p>
+      <p class="lead" style="margin-bottom:var(--s3)">Vexora brings powerful trading tools, real-time market insights, and an intuitive trading experience together in one modern platform.</p>
+      <div class="cta-row"><a href="#cta" class="btn btn-p">Create your account <i data-lucide="arrow-right"></i></a><a href="#platform" class="btn btn-g">Explore the platform</a></div>
+      <a href="#learn" class="link">New to forex? Start with our beginner guide →</a>
+    </div>
+    <div class="rv">
+      <div class="panel" role="img" aria-label="Demo trading dashboard showing a candlestick chart and watchlist">
+        <div class="dash">
+          <div class="wl"><h4>Watchlist</h4><ul id="wl"></ul></div>
+          <div class="main">
+            <div class="top"><div><small class="ph">EUR/USD · 1H</small><strong>1.0842</strong> <span class="up">+0.32%</span></div><small class="ph">RSI 58 · Vol ▲</small></div>
+            <svg class="chart" id="c1" viewBox="0 0 400 200" preserveAspectRatio="none"></svg>
+            <div class="tr"><button class="sell">Sell 1.0841</button><button class="buy">Buy 1.0843</button></div>
+          </div>
+        </div>
+        <div class="pf"><span class="ph" style="margin:0">Portfolio (demo)</span><strong>$24,180.50 <span class="up">+1.8%</span></strong></div>
+      </div>
+      <p class="cap">Demo interface — prices are illustrative, not live.</p>
+    </div>
+  </div>
+</section>
+
+<div class="strip"><div class="wrap">
+  <div class="rv"><div class="ic"><i data-lucide="layers"></i></div><h3>Built for every level</h3><p>Beginner-friendly tools alongside advanced functionality.</p></div>
+  <div class="rv"><div class="ic"><i data-lucide="line-chart"></i></div><h3>Powerful market tools</h3><p>Charts, watchlists and market insights in one place.</p></div>
+  <div class="rv"><div class="ic"><i data-lucide="shield"></i></div><h3>Security-focused</h3><p>Designed with account protection and responsible access in mind.</p></div>
+  <div class="rv"><div class="ic"><i data-lucide="sliders-horizontal"></i></div><h3>Trade on your terms</h3><p>A flexible platform for different trading styles.</p></div>
+</div></div>
+
+<section id="platform"><div class="wrap">
+  <div class="rv"><p class="eyebrow">Platform</p><h2>Your market.<br>Your strategy.<br><span class="grad">Your platform.</span></h2>
+  <p class="lead">One unified environment to monitor markets, analyze price movements, manage positions, and develop your strategy.</p></div>
+  <div class="tabs rv" role="tablist" id="tabs"></div>
+  <div class="panel big rv" id="tabpanel" role="tabpanel" aria-live="polite"></div>
+  <p class="cap">Demo interface — market data shown for illustration.</p>
+</div></section>
+
+<section id="features" style="padding-top:0"><div class="wrap">
+  <div class="rv"><p class="eyebrow">Features</p><h2>Tools that stay out of your way.</h2></div>
+  <div class="grid3" id="fgrid"></div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap split">
+  <div class="half a rv"><div class="ic"><i data-lucide="compass"></i></div><h3>Just getting started?</h3><p>Forex doesn't have to feel complicated. Vexora gives new traders a clear starting point, educational resources, and an intuitive interface designed to help you understand the market before taking action.</p><a href="#learn" class="btn btn-g">Start learning</a></div>
+  <div class="half b rv"><div class="ic"><i data-lucide="candlestick-chart"></i></div><h3>Already know your strategy?</h3><p>Take your analysis further with advanced charts, customizable watchlists, market monitoring, and tools designed for a more focused trading workflow.</p><a href="#cta" class="btn btn-p">Explore advanced tools</a></div>
+</div></section>
+
+<section id="markets" style="padding-top:0"><div class="wrap">
+  <div class="rv"><p class="eyebrow">Markets</p><h2>Stay close to the markets that matter.</h2></div>
+  <div class="panel rv" style="padding:var(--s2);margin-top:var(--s4)"><div class="tw"><table>
+    <thead><tr><th>Pair</th><th>Bid</th><th>Ask</th><th>Daily</th><th>Trend</th></tr></thead><tbody id="mk"></tbody></table></div></div>
+  <p class="cap">Demo / illustrative data only.</p>
+  <p style="text-align:center;margin-top:var(--s2)"><a href="#" class="link">Explore markets →</a></p>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="rv"><p class="eyebrow">How it works</p><h2>Three steps. No noise.</h2></div>
+  <div class="steps">
+    <div class="step rv"><b>01</b><h3>Create your account</h3><p>Create your Vexora account and set up your profile.</p></div>
+    <div class="step rv"><b>02</b><h3>Explore the markets</h3><p>Build your watchlist, study charts, and explore available markets.</p></div>
+    <div class="step rv"><b>03</b><h3>Trade with a plan</h3><p>Use your chosen strategy and manage your positions responsibly.</p></div>
+  </div>
+  <p class="risk rv">Trading forex involves significant risk and may not be suitable for everyone. Never trade more than you can afford to lose.</p>
+</div></section>
+
+<section id="learn" style="padding-top:0"><div class="wrap">
+  <div class="rv"><p class="eyebrow">Education</p><h2>Learn before you trade.</h2></div>
+  <div class="grid3">
+    <article class="card rv"><div class="ic"><i data-lucide="book-open"></i></div><h3>Forex 101</h3><p>Understand currency pairs, spreads, leverage, and how forex markets work.</p></article>
+    <article class="card rv"><div class="ic"><i data-lucide="bar-chart-3"></i></div><h3>Reading the Market</h3><p>Learn the basics of charts, trends, support, resistance, and market analysis.</p></article>
+    <article class="card rv"><div class="ic"><i data-lucide="scale"></i></div><h3>Risk Management</h3><p>Understand position sizing, stop-losses, and responsible trading practices.</p></article>
+  </div>
+  <p style="margin-top:var(--s3)"><a href="#" class="link">Visit the learning center →</a></p>
+</div></section>
+
+<section id="security" style="padding-top:0"><div class="wrap sec">
+  <div class="rv"><p class="eyebrow">Trust</p><h2>Designed with your account in mind.</h2>
+  <ul class="pts">
+    <li><i data-lucide="key-round"></i>Secure account access</li>
+    <li><i data-lucide="shield-check"></i>Account protection features</li>
+    <li><i data-lucide="eye"></i>Transparent platform information</li>
+    <li><i data-lucide="layout-dashboard"></i>Clear trading tools</li>
+    <li><i data-lucide="lock-keyhole"></i>Privacy-conscious design</li>
+  </ul></div>
+  <div class="ring rv" aria-hidden="true"><i></i><i></i><i></i><div><i data-lucide="fingerprint" style="width:34px;height:34px"></i></div></div>
+</div></section>
+
+<section id="cta" style="padding-top:0"><div class="wrap"><div class="cta rv">
+  <h2 style="max-width:16ch;margin-inline:auto">Ready to see the market differently?</h2>
+  <p class="lead">Create your Vexora account and explore a modern trading experience built for where you are — and where you're going.</p>
+  <div class="cta-row"><a href="#" class="btn btn-p">Create your account <i data-lucide="arrow-right"></i></a><a href="#platform" class="btn btn-g">Explore the platform</a></div>
+  <p class="fine">Trading involves risk. Past performance is not indicative of future results.</p>
+</div></div></section>
+
+<section id="faq" style="padding-top:0"><div class="wrap">
+  <div class="rv" style="text-align:center"><p class="eyebrow">FAQ</p><h2>Questions, answered.</h2></div>
+  <div class="faq rv" id="faqs"></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="fg">
+    <div><a href="#top" class="logo"><b></b>Vexora</a><p class="fine" style="margin-top:12px;font-size:.92rem">Modern tools for a changing market.</p></div>
+    <div><h4>Platform</h4><ul><li><a href="#markets">Markets</a></li><li><a href="#features">Trading tools</a></li><li><a href="#platform">Watchlist</a></li><li><a href="#cta">Account</a></li></ul></div>
+    <div><h4>Learn</h4><ul><li><a href="#learn">Forex basics</a></li><li><a href="#learn">Market analysis</a></li><li><a href="#learn">Risk management</a></li><li><a href="#learn">Glossary</a></li></ul></div>
+    <div><h4>Company</h4><ul><li><a href="#">About</a></li><li><a href="#">Contact</a></li><li><a href="#">Careers</a></li><li><a href="#">Help center</a></li></ul></div>
+    <div><h4>Legal</h4><ul><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li><li><a href="#">Risk disclosure</a></li><li><a href="#">Cookie policy</a></li></ul></div>
+  </div>
+  <div class="fb"><span>© 2026 Vexora. Fictional demo platform.</span>
+    <div class="soc"><a href="#" aria-label="X"><i data-lucide="twitter"></i></a><a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a><a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a></div></div>
+</div></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
